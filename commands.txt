@@ -1,0 +1,20 @@
+#פקודות CLI
+##########
+
+#1.2
+"הפעלת minikube:"
+
+ minikube start
+
+"בדיקת סטטוס"
+
+(venv) PS C:\Users\מתי\PycharmProjects\project_01.01.26_exe_k8s> minikube status
+minikube
+type: Control Plane
+host: Running
+kubelet: Running
+apiserver: Running
+kubeconfig: Configured
+
+
+
