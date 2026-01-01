@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: streamelit
+  labels:
+    app: streamelit
+spec:
+  selector: 
+    app: streamelit
+  ports:
+    - port: 8080
+      targetPort: 8501
+  type: NodePort

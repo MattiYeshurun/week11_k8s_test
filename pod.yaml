@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: streamelit
+  labels:
+    app: streamelit
+spec:
+  containers:
+  - name: streamelit
+    image: mattiyeshurun/streamlit-app:v1
+    imagePullPolicy: IfNotPresent
+    ports:
+    - containerPort: 8080

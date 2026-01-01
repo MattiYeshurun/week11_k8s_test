@@ -16,5 +16,27 @@ kubelet: Running
 apiserver: Running
 kubeconfig: Configured
 
+2.2
+build image
+
+docker build -t mattiyeshurun/streamlit-app:v1 .
+
+docker images
+                                                                   i Info →   U  In Use
+IMAGE                            ID             DISK USAGE   CONTENT SIZE   EXTRA
+mattiyeshurun/streamlit-app:v1   43b1701bf829        775MB          177MB
+
+2.3
+
+docker run -d mattiyeshurun/streamlit-app:v1 
+
+2.4
+docker push  mattiyeshurun/streamlit-app:v1
+
+3.1
+kubectl apply -f pod.yaml   
+
+3.2
+kubectl apply -f service.yaml   
 
 
